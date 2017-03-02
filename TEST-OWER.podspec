@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #
 
     s.ios.framework  = 'UIKit'
-    s.framework  = "ReactiveCocoa"
+  # s.framework  = "ReactiveCocoa"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
