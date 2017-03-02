@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "LZLabelModel.h"
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
-
 @interface LZLabel : UILabel
 
 - (instancetype)initWithModel:(LZLabelModel *)model;
