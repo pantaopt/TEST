@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double LZUIKitVersionNumber;
 //! Project version string for LZUIKit.
 FOUNDATION_EXPORT const unsigned char LZUIKitVersionString[];
 
+//#import <LZUIKit/LZLabel.h>
+//#import <LZUIKit/LZLabelModel.h>
 #import "LZLabel.h"
 #import "LZLabelModel.h"
 
