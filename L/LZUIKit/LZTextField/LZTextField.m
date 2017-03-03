@@ -26,20 +26,25 @@
 - (instancetype)initWithModel:(LZTextFieldModel *)model{
     self = [super init];
     if(!self) return nil;
-    RACChannelTo(self, text) = RACChannelTo(model, text);
+    
+    RACChannelTerminal *modelTerminal = RACChannelTo(model, text);
+    RAC(self, text) = modelTerminal;
+    [self.rac_textSignal subscribe:modelTerminal];
+    
     return self;
 }
 
 - (void)setModel:(LZTextFieldModel *)model{
     _model = model;
-    RACChannelTo(self, text) = RACChannelTo(model, text);
+    RACChannelTerminal *modelTerminal = RACChannelTo(model, text);
+    RAC(self, text) = modelTerminal;
+    [self.rac_textSignal subscribe:modelTerminal];
 }
 
-- (void)LZTextFieldBlock:(LZTextFieldBlock)lzTextFieldBlock{
-    @weakify(self);
+- (void)LZ_textFieldBlock:(LZTextFieldBlock)lzTextFieldBlock{
+//    @weakify(self);
     [self.rac_textSignal subscribeNext:^(id x) {
-        @strongify(self);
-        self.model.text = x;
+//        @strongify(self);
         lzTextFieldBlock(x);
     }];
 }

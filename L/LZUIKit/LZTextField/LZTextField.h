@@ -20,6 +20,6 @@ typedef void(^LZTextFieldBlock)(NSString *text);
 
 @property (nonatomic, strong) LZTextFieldModel *model;
 
-- (void)LZTextFieldBlock:(LZTextFieldBlock)lzTextFieldBlock;
+- (void)LZ_textFieldBlock:(LZTextFieldBlock)lzTextFieldBlock;
 
 @end

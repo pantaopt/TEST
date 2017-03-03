@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TEST-OWER"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "测试给自己github上的工程添加cocoaspod支持."
 
   # This description is used to generate tags and improve search results.
