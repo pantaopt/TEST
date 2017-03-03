@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TEST-OWER"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "测试给自己github上的工程添加cocoaspod支持."
 
   # This description is used to generate tags and improve search results.
@@ -134,5 +134,17 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
     s.dependency "ReactiveCocoa", "~> 2.5"
+
+  # ――― Subspec Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+    s.subspec 'LZLabel' do |LZLabel|
+    LZLabel.source_files = 'L/LZUIKit/LZLabel/**/*'
+    LZLabel.dependency "ReactiveCocoa", "~> 2.5"
+    end
+
+    s.subspec 'LZTextField' do |LZTextField|
+    LZTextField.source_files = 'L/LZUIKit/LZTextField/**/*'
+    LZTextField.dependency "ReactiveCocoa", "~> 2.5"
+    end
 
 end
