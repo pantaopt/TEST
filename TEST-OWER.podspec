@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TEST-OWER"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "测试给自己github上的工程添加cocoaspod支持."
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "L/*.{h,m}"
+  s.source_files  = "L/LZUIKit/LZLabel/*.{h,m}", "L/LZUIKit/LZTextField/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

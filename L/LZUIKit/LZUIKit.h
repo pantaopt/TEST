@@ -19,3 +19,6 @@ FOUNDATION_EXPORT const unsigned char LZUIKitVersionString[];
 #import "LZLabel.h"
 #import "LZLabelModel.h"
 
+#import "LZTextField.h"
+#import "LZTextFieldModel.h"
+
