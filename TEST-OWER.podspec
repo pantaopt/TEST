@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "L/LZUIKit/LZLabel/*.{h,m}", "L/LZUIKit/LZTextField/*.{h,m}", "L/LZUIKit/*.{h}"
+  s.source_files  = "L/LZUIKit/*.{h}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -138,12 +138,12 @@ Pod::Spec.new do |s|
   # ――― Subspec Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
     s.subspec 'LZLabel' do |lZLabel|
-    lZLabel.source_files = 'L/LZUIKit/LZLabel/**/*'
+    lZLabel.source_files = "L/LZUIKit/LZLabel/*.{h,m}"
     lZLabel.dependency "ReactiveCocoa", "~> 2.5"
     end
 
     s.subspec 'LZTextField' do |lZTextField|
-    lZTextField.source_files = 'L/LZUIKit/LZTextField/**/*'
+    lZTextField.source_files = , "L/LZUIKit/LZTextField/*.{h,m}"
     lZTextField.dependency "ReactiveCocoa", "~> 2.5"
     end
 
