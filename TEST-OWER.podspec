@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'LZTextField' do |lZTextField|
-    lZTextField.source_files = , "L/LZUIKit/LZTextField/*.{h,m}"
+    lZTextField.source_files = "L/LZUIKit/LZTextField/*.{h,m}"
     lZTextField.dependency "ReactiveCocoa", "~> 2.5"
     end
 
