@@ -137,14 +137,14 @@ Pod::Spec.new do |s|
 
   # ――― Subspec Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-    s.subspec 'LZLabel' do |LZLabel|
-    LZLabel.source_files = 'L/LZUIKit/LZLabel/**/*'
-    LZLabel.dependency "ReactiveCocoa", "~> 2.5"
+    s.subspec 'LZLabel' do |lZLabel|
+    lZLabel.source_files = 'L/LZUIKit/LZLabel/**/*'
+    lZLabel.dependency "ReactiveCocoa", "~> 2.5"
     end
 
-    s.subspec 'LZTextField' do |LZTextField|
-    LZTextField.source_files = 'L/LZUIKit/LZTextField/**/*'
-    LZTextField.dependency "ReactiveCocoa", "~> 2.5"
+    s.subspec 'LZTextField' do |lZTextField|
+    lZTextField.source_files = 'L/LZUIKit/LZTextField/**/*'
+    lZTextField.dependency "ReactiveCocoa", "~> 2.5"
     end
 
 end
